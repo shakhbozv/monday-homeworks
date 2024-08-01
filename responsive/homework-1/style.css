@@ -1,0 +1,174 @@
+/* Основные стили для body и элементов */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    padding: 1vw;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.header__title {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.header__nav {
+    margin-top: 0.5rem;
+}
+
+.header__link {
+    color: #00bcd4;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+}
+
+.main-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.main-content__section {
+    margin-bottom: 2rem;
+}
+
+.main-content__heading {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.main-content__text {
+    font-size: 1rem;
+    color: #e0e0e0;
+}
+
+.main-content__gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.main-content__gallery-item {
+    height: 200px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-item--1 {
+    background-color: #333;
+}
+
+.gallery-item--2 {
+    background-color: #444;
+}
+
+.gallery-item--3 {
+    background-color: #555;
+}
+
+.footer {
+    width: 100%;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer__text {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Анимация загрузки */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(18, 18, 18, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.loading-overlay__spinner {
+    width: 60px;
+    height: 60px;
+    border: 6px solid #444;
+    border-top: 6px solid #00bcd4;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-overlay__text {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #e0e0e0;
+}
+
+/* Медиа-запросы для адаптивного дизайна */
+@media (max-width: 768px) {
+    .header__title {
+        font-size: 1.5rem;
+    }
+
+    .header__link {
+        font-size: 1rem;
+    }
+
+    .main-content__heading {
+        font-size: 1.5rem;
+    }
+
+    .main-content__text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__title {
+        font-size: 1.2rem;
+    }
+
+    .header__link {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .main-content__heading {
+        font-size: 1.2rem;
+    }
+
+    .main-content__text {
+        font-size: 0.8rem;
+    }
+}

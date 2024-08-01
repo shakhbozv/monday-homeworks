@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Web Project</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="page">
+    <header class="header">Modern Web Project</header>
+    <aside class="sidebar">
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="#blog" class="menu__link">Blog</a></li>
+                <li class="menu__item"><a href="#products" class="menu__link">Products</a></li>
+                <li class="menu__item"><a href="#dashboard" class="menu__link">Dashboard</a></li>
+                <li class="menu__item"><a href="#auto-placement" class="menu__link">Auto-Placement</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="content">
+        <!-- Blog Section -->
+        <section id="blog" class="blog">
+            <h1 class="section-title">Blog</h1>
+            <article class="blog__post">
+                <h2 class="blog__title">Post Title 1</h2>
+                <p class="blog__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquet ultricies
+                    lorem, nec varius justo commodo a.</p>
+            </article>
+            <article class="blog__post">
+                <h2 class="blog__title">Post Title 2</h2>
+                <p class="blog__content">Suspendisse potenti. Proin in erat at velit vestibulum luctus.</p>
+            </article>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="products">
+            <h1 class="section-title">Products</h1>
+            <div class="products__grid">
+                <div class="product-card">
+                    <div class="product-card__image"></div>
+                    <div class="product-card__name">Product 1</div>
+                    <div class="product-card__price">$19.99</div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card__image"></div>
+                    <div class="product-card__name">Product 2</div>
+                    <div class="product-card__price">$29.99</div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card__image"></div>
+                    <div class="product-card__name">Product 3</div>
+                    <div class="product-card__price">$39.99</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dashboard Section -->
+        <section id="dashboard" class="dashboard">
+            <h1 class="section-title">Dashboard</h1>
+            <div class="dashboard__grid">
+                <div class="widget start">Start</div>
+                <div class="widget end">End</div>
+                <div class="widget center">Center</div>
+                <div class="widget start">Start</div>
+                <div class="widget end">End</div>
+                <div class="widget center">Center</div>
+            </div>
+        </section>
+
+        <!-- Auto-Placement Section -->
+        <div class="main-grid">
+            <div class="main-grid__item main-grid__item--1">Item 1</div>
+            <div class="main-grid__item main-grid__item--2">
+                <div class="nested-grid">
+                    <div class="nested-grid__item">Nested 1</div>
+                    <div class="nested-grid__item">Nested 2</div>
+                    <div class="nested-grid__item">Nested 3</div>
+                </div>
+            </div>
+            <div class="main-grid__item main-grid__item--3">Item 3</div>
+        </div>
+    </main>
+    <footer class="footer">Modern Web Project Footer</footer>
+</div>
+</body>
+</html>

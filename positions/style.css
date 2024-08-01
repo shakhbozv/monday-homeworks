@@ -1,0 +1,98 @@
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: block;
+}
+
+.header {
+  background-color: #1e1e1e;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  text-align: center;
+}
+
+.header__title {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.main-content {
+  padding: 80px 20px 20px; /* Padding to avoid overlap with the fixed header */
+}
+
+.product-card-container {
+  position: relative;
+}
+
+.product-card {
+  background-color: #1e1e1e;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 200px;
+  padding: 20px;
+  margin: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.product-card--featured {
+  z-index: 10;
+  border: 2px solid #fff;
+}
+
+.product-card__image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product-card__title {
+  font-size: 1.25rem;
+  margin: 10px 0;
+}
+
+.product-card__description {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+.product-card__badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #f00;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 8px;
+  z-index: 20;
+  font-size: 0.875rem;
+}
+
+.product-card__badge--discount {
+  background-color: #f00;
+}
+
+.product-card__badge--new {
+  background-color: #0f0;
+  left: auto;
+  right: 10px;
+}
+
+.footer {
+  background-color: #1e1e1e;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer__text {
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
